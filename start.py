@@ -19,11 +19,23 @@ print("ᗷ ᒪ ᗩ ᑕ ᛕ  ᒎ ᗩ ᑕ ᛕ")
 #''')
 
 
+
+def greet():
+    user_name = input("Welcome to Black Jack terminal game! How can i call you?")
+    if user_name is not None:
+        print("Glad to see you here!")
+    return greet()
+
+greet() 
+
+
+
+
 player_card = ''
 cards_list = []
 
 ###Выдает  по одному элементу в лист и обновляет 
-#cards_list.append(random.choices(['A','K','Q','J','10','9','8','7','6','5','4','3','2'], k=10))# + random.choice(['♠','♣','♢','♡'])
+# cards_list.append(random.choices(['A','K','Q','J','10','9','8','7','6','5','4','3','2'], k=10))# + random.choice(['♠','♣','♢','♡'])
 
 ###
 
@@ -90,3 +102,15 @@ print(cards_list)
 # # print(deck("AKQJ🔟98765432", "♠♣♢♡"))
 # print(deck(['A♠','K♠','Q♠']))
 # # print(cards_list)
+
+
+def greet():
+    user_name = input("Welcome to Black Jack terminal game! How can i call you?")
+    if user_name is not None:
+        print("Glad to see you here!")
+    return greet()
+
+greet() 
+# def desk():
+#     print("Take a card")
+    
